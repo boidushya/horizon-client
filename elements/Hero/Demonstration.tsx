@@ -609,11 +609,11 @@ const BadCheckoutSlides: React.FC = () => {
 
 	return (
 		<>
-			<div className="grid h-full place-items-center">
+			<div className="grid h-full scale-50 place-items-center lg:scale-100">
 				{transitions((props, item) => (
 					<animated.div style={props}>{items[item]}</animated.div>
 				))}
-				{/* <BadSlide3 /> */}
+				{/* <Slide1 /> */}
 			</div>
 		</>
 	);
@@ -654,11 +654,11 @@ const GoodCheckoutSlides: React.FC = () => {
 
 	return (
 		<>
-			<div className="relative grid h-full place-items-center">
+			<div className="relative grid h-full scale-50 place-items-center lg:scale-100">
 				{transitions((props, item) => (
 					<animated.div style={props}>{items[item]}</animated.div>
 				))}
-				{/* <GoodSlide3 /> */}
+				{/* <Slide1 /> */}
 			</div>
 		</>
 	);
@@ -666,8 +666,8 @@ const GoodCheckoutSlides: React.FC = () => {
 
 const Demonstration: NextPage = () => {
 	return (
-		<div className="relative border-2 border-accent-600 w-[48rem] h-[36rem] shadow-md rounded-lg bg-accent-900 grid grid-cols-2 divide-x-2 divide-accent-600">
-			<div className="h-full py-12 overflow-hidden">
+		<div className="relative border-2 border-accent-600 lg:w-[48rem] lg:h-[36rem] w-[24rem] h-[16rem] shadow-md rounded-lg bg-accent-900 grid grid-cols-2 divide-x-2 divide-accent-600">
+			<div className="h-full pt-0 overflow-hidden lg:pt-6">
 				<div className="absolute top-0 left-0 flex items-center justify-end w-full h-6 gap-1 px-2 border-b-2 shadow-md rounded-t-md bg-accent-800 border-accent-600">
 					<div className="w-2 h-2 bg-red-500 rounded-full" />
 					<div className="w-2 h-2 bg-yellow-500 rounded-full" />
@@ -675,13 +675,13 @@ const Demonstration: NextPage = () => {
 				</div>
 				<BadCheckoutSlides />
 			</div>
-			<div className="overflow-hidden">
+			<div className="h-full pt-0 overflow-hidden lg:pt-6">
 				<GoodCheckoutSlides />
-				<div className="absolute bottom-0 left-0 flex items-center justify-around w-full translate-y-1/2">
-					<p className="flex justify-center w-full px-4 py-2 mx-8 overflow-hidden text-red-100 border-2 border-red-400 rounded-full shadow-md bg-accent-900 hero-bg bg-opacity-80">
+				<div className="absolute bottom-0 left-0 flex items-center justify-around w-full pt-4 translate-y-full lg:pt-0 lg:translate-y-1/2">
+					<p className="flex items-center justify-center w-full px-4 py-1 mx-4 overflow-hidden text-xs text-center text-red-100 border-2 border-red-400 rounded-md shadow-md lg:rounded-full lg:py-2 2xl:mx-8 lg:text-base bg-accent-900 hero-bg bg-opacity-80">
 						Traditional checkout experience
 					</p>
-					<p className="flex justify-center w-full px-4 py-2 mx-8 overflow-hidden text-green-100 border-2 border-green-500 rounded-full shadow-md bg-accent-900 hero-bg bg-opacity-80">
+					<p className="flex items-center justify-center w-full px-4 py-1 mx-4 overflow-hidden text-xs text-center text-green-100 border-2 border-green-500 rounded-md shadow-md lg:rounded-full lg:py-2 2xl:mx-8 lg:text-base bg-accent-900 hero-bg bg-opacity-80">
 						HORIZON makes it ridiculously simple
 					</p>
 				</div>
