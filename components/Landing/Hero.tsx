@@ -14,7 +14,7 @@ const Section1: React.FC = () => {
 					<h1 className="font-medium text-8xl text-zinc-50">
 						Horizon
 					</h1>
-					<h3 className="text-2xl leading-none text-transparent text-zinc-300 bg-clip-text bg-gradient-to-r from-accent-300 to-red-200">
+					<h3 className="text-2xl leading-none text-transparent bg-clip-text bg-gradient-to-r from-accent-300 to-red-200">
 						Blazing fast checkout made easy
 						<span className="inline-block ml-2 align-middle shake">
 							<Image
