@@ -9,7 +9,7 @@ const Section1: React.FC = () => {
 	return (
 		<div className="relative grid h-screen border-b shadow-xl place-items-center border-zinc-800">
 			<div className="absolute z-0 w-full h-full hero-bg" />
-			<main className="absolute flex flex-col items-center justify-between w-full gap-4 px-8 mx-auto 2xl:w-3/4 lg:flex-row 2xl:px-0">
+			<main className="absolute flex flex-col items-center justify-between w-full gap-4 px-8 mx-auto -translate-y-8 lg:translate-y-0 2xl:w-3/4 lg:flex-row 2xl:px-0">
 				<div className="mb-8 lg:mb-0">
 					<h1 className="text-6xl font-medium text-center lg:text-left lg:text-8xl text-zinc-50">
 						Horizon
