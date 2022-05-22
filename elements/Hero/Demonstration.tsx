@@ -433,6 +433,7 @@ const GoodSlide3: React.FC = () => {
 		to: [{ scale: 0.9 }, { scale: 1 }],
 		config: config,
 		delay: 500,
+		pause: isComplete,
 		onRest: () => set(true),
 	});
 
@@ -656,7 +657,7 @@ const GoodCheckoutSlides: React.FC = () => {
 				{transitions((props, item) => (
 					<animated.div style={props}>{items[item]}</animated.div>
 				))}
-				{/* <Slide1 /> */}
+				{/* <GoodSlide3 /> */}
 			</div>
 		</>
 	);
