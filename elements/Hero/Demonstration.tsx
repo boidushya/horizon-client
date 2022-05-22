@@ -586,7 +586,6 @@ const BadCheckoutSlides: React.FC = () => {
 	const [index, setIndex] = useState(0);
 
 	const handleRest = () => {
-		console.log("resting");
 		setTimeout(() => {
 			setIndex((index + 1) % items.length);
 		}, 3000);
@@ -631,7 +630,6 @@ const GoodCheckoutSlides: React.FC = () => {
 	const [index, setIndex] = useState(0);
 
 	const handleRest = () => {
-		console.log("resting");
 		setTimeout(() => {
 			setIndex((index + 1) % items.length);
 		}, 3000);

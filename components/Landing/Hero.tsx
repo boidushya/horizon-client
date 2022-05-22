@@ -11,10 +11,10 @@ const Section1: React.FC = () => {
 			<div className="absolute z-0 w-full h-full hero-bg" />
 			<main className="absolute flex flex-col items-center justify-between w-full gap-4 px-8 mx-auto 2xl:w-3/4 lg:flex-row 2xl:px-0">
 				<div className="mb-8 lg:mb-0">
-					<h1 className="text-6xl font-medium text-center lg:text-8xl text-zinc-50">
+					<h1 className="text-6xl font-medium text-center lg:text-left lg:text-8xl text-zinc-50">
 						Horizon
 					</h1>
-					<h3 className="text-lg leading-none text-center text-transparent lg:text-2xl bg-clip-text bg-gradient-to-r from-accent-300 to-red-200">
+					<h3 className="text-lg leading-none text-center lg:text-left lg:text-2xl gradient-text ">
 						Blazing fast checkout made easy
 						<span className="inline-block ml-2 align-middle shake">
 							<Image
