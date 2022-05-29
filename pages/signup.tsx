@@ -25,7 +25,6 @@ const SignupComponent = () => {
 			<div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
 				<div className="max-w-md w-full space-y-8">
 					<div>
-						<img className="mx-auto h-12 w-12" src="https://res.cloudinary.com/etjfo/image/upload/v1643884334/starlight/starlight-favicon_uodnqn.svg" alt="Workflow" />
 						<h2 className="mt-6 text-center text-3xl font-extrabold text-gray-200">
 							Sign up for an account
 						</h2>
