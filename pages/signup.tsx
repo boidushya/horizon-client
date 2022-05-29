@@ -80,7 +80,7 @@ const SignupComponent = () => {
 
 							<div>
 								<label htmlFor="password" className="sr-only">
-									phoneno
+									Phone No
 								</label>
 								<input
 									id="password"
