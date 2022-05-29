@@ -7,7 +7,17 @@ const Navbar: React.FC = () => {
 			<div className="flex items-center gap-8 transition-colors duration-100 text-zinc-300 hover:text-zinc-50 ">
 				<Link href={`/about`}>About</Link>
 				<span className="px-3 py-2 transition-colors duration-200 rounded-md cursor-pointer bg-accent-200 text-zinc-50 hover:bg-accent-300 ">
-					<Link href={`/connect`}>Connect</Link>
+					{/* <Link href={`/connect`}>Connect</Link> */}
+					<button
+						onClick={() => {
+							let id = "ldfceamgefbimhknjmmffacccemedibb";
+							chrome.runtime.sendMessage(id, {
+								yes: false,
+							});
+						}}
+					>
+						Connect
+					</button>
 				</span>
 			</div>
 		</div>

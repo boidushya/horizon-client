@@ -605,6 +605,7 @@ const BadCheckoutSlides: React.FC = () => {
 
 	useEffect(() => {
 		transRef.start();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [index]);
 
 	return (
@@ -649,6 +650,7 @@ const GoodCheckoutSlides: React.FC = () => {
 
 	useEffect(() => {
 		transRef.start();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [index]);
 
 	return (
