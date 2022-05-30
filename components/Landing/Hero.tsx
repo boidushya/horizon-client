@@ -35,11 +35,30 @@ const Section1: React.FC = () => {
 const Section2: React.FC = () => {
 	return (
 		<div className="relative grid h-screen bg-zinc-900 place-items-center">
-			<div className="w-3/4 mx-auto">
-				<h1 className="font-medium text-8xl text-zinc-50">Blah</h1>
-				<h3 className="text-xl text-zinc-300 ">
-					Enter Some more content for later. Yes its that easy!
-				</h3>
+			<div className="relative border-2 border-accent-600 lg:w-[48rem] lg:h-[36rem] w-[24rem] h-[16rem] shadow-md rounded-lg bg-accent-900 text-center">
+				<div className="h-full pt-0 overflow-hidden lg:pt-6">
+					<div className="absolute top-0 left-0 flex items-center justify-end w-full h-6 gap-1 px-2 border-b-2 shadow-md rounded-t-md bg-accent-800 border-accent-600">
+						<div className="w-2 h-2 bg-red-500 rounded-full" />
+						<div className="w-2 h-2 bg-yellow-500 rounded-full" />
+						<div className="w-2 h-2 bg-green-500 rounded-full" />
+					</div>
+					<div className="flex flex-col justify-center h-full p-4 space-y-4 font-medium text-zinc-100">
+						<h1 className="text-6xl gradient-text">
+							Lorem ipsum dolor,
+						</h1>
+						<p className="w-3/4 mx-auto text-xl font-normal text-justify text-zinc-300">
+							sit amet consectetur adipisicing elit.Ut delectus
+							omnis iste dignissimos exercitationem, temporibus
+							consequatur quam architecto? Unde magni enim
+							doloribus blanditiis, ipsa eius numquam soluta
+							recusandae rem minima. Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit. Sapiente, quis!
+							Laborum optio commodi facere non. Ratione dolores
+							est, veniam obcaecati magni quae sequi, doloremque
+							illo eum assumenda repellat. Maiores, quia!
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
