@@ -10,6 +10,8 @@ const SignupComponent = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [phone, setPhone] = useState("");
+	const [address,setAddress] = useState("");
+	const [paymentMethod,setPaymentMethod] = useState("");
 
 	const signup = (e: any) => {
 		// eslint-disable-next-line react-hooks/rules-of-hooks
@@ -85,6 +87,38 @@ const SignupComponent = () => {
 									required
 									className="relative block w-full px-3 py-2 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-none appearance-none focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
 									placeholder="Phone no"
+								/>
+							</div>
+
+							<div>
+								<label htmlFor="address" className="sr-only">
+									Address
+								</label>
+								<input
+									id="address"
+									name="address"
+									type="text"
+									onChange={e => setAddress(e.target.value)}
+									autoComplete="current-password"
+									required
+									className="relative block w-full px-3 py-2 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-none appearance-none focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+									placeholder="Primary Address"
+								/>
+							</div>
+
+							<div>
+								<label htmlFor="password" className="sr-only">
+									Payment Method
+								</label>
+								<input
+									id="password"
+									name="paymentMethod"
+									type="text"
+									onChange={e => setPaymentMethod(e.target.value)}
+									autoComplete="current-password"
+									required
+									className="relative block w-full px-3 py-2 text-gray-800 placeholder-gray-500 border border-gray-300 rounded-none appearance-none focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+									placeholder="Primary Payment Method"
 								/>
 							</div>
 
